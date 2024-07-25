@@ -1,0 +1,102 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.app {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00d4ff;
+}
+
+.todo-form .form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+.todo-form .form-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.todo-form .form-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #00d4ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-form .form-button:hover {
+  background: #00a0ff;
+}
+
+.todo-list .todo-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.todo-list .todo-item:hover {
+  transform: scale(1.05);
+}
+
+.todo-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.action-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.complete-button {
+  background: #28a745;
+  transition: background 0.3s;
+}
+
+.complete-button:hover {
+  background: #218838;
+}
+
+.delete-button {
+  background: #dc3545;
+  transition: background 0.3s;
+}
+
+.delete-button:hover {
+  background: #c82333;
+}
